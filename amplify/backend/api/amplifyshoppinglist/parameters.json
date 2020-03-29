@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "amplifyshoppinglist",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authamplifyshoppingfe6c3fe0",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
